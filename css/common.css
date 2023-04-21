@@ -103,18 +103,6 @@ a {
   }
 }
 
-/* Styles for iPhone screens */
-@media (max-width: 767px) {
-
-  #img1 {
-    width: 25%;
-  }
-
-  #name1 {
-    width: 98%;
-  }
-}
-
 .col-about {
   background-color: rgb(219, 245, 219);
 }
