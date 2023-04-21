@@ -258,8 +258,8 @@ a {
   text-align: start;
 }
 
-.container.text-center.top10 .my-aside {
-  margin-top: 110px;
+.my-aside {
+  margin-top: 20px;
   padding: 10px;
   width: 350px;
 }
