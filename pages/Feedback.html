@@ -163,54 +163,59 @@
       </div>
 
       <!-- This is the content in this page -->
-      <div class="col-9">
+      <div class="col-lg-9">
         <h2>Feedback</h2>
         <h3>We want to hear your opinion to improve your experience</h3>
-        <div id="container">
-          <img id="img1" src="../images/Envelope.jpg" alt="Envelope_image" width="300">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img id="img1" src="../images/Envelope.jpg" alt="Envelope_image">
+            </div>
+            <div class="col-lg-8">
+              <!-- This is a form -->
+              <form id="form" class="row g-3 needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="John Patrick" required>
+                  <div class="invalid-feedback">
+                    Please enter your name
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  <div class="invalid-feedback">
+                    Please enter your email
+                  </div>
+                </div>
 
-          <!-- This is a form -->
-          <form id="form" class="row g-3 needs-validation" novalidate>
-            <div class="form-group">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="John Patrick" required>
-              <div class="invalid-feedback">
-                Please enter your name
-              </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Your phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+                  <div class="invalid-feedback">
+                    Please enter your phone
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label">Message subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                  <div class="invalid-feedback">
+                    Please enter a subject
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="3" required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter a message
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input id="submitBtn" class="w-100 btn btn-success btn-lg submit_btn" type="submit" value="Submit">
+                </div>
+              </form>
             </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Your Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-              <div class="invalid-feedback">
-                Please enter your email
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="phone" class="form-label">Your phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
-              <div class="invalid-feedback">
-                Please enter your phone
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="subject" class="form-label">Message subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-              <div class="invalid-feedback">
-                Please enter a subject
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" required></textarea>
-              <div class="invalid-feedback">
-                Please enter a message
-              </div>
-            </div>
-            <div class="form-group">
-              <input id="submitBtn" class="w-100 btn btn-success btn-lg submit_btn" type="submit" value="Submit">
-            </div>
-          </form>
+          </div>
         </div>
       </div>
 

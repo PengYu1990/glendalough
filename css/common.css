@@ -95,11 +95,18 @@ a {
 @media (min-width: 768px) and (max-width: 1023px) {
 
   #img1 {
-    width: 40%;
+    display: none;
   }
 
   .glenda {
     font-size: 99%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #img1 {
+    display: none;
   }
 }
 
