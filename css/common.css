@@ -92,23 +92,6 @@ a {
 }
 
 /* Styles for iPad screens */
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  #img1 {
-    display: none;
-  }
-
-  .glenda {
-    font-size: 99%;
-  }
-}
-
-@media (max-width: 768px) {
-
-  #img1 {
-    display: none;
-  }
-}
 
 .col-about {
   background-color: rgb(219, 245, 219);
