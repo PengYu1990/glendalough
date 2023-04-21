@@ -1,0 +1,287 @@
+/*Common Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.pr10 {
+  padding-left: 0;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.br0 {
+  border-radius: 0;
+}
+
+.top10 {
+  margin-top: 10px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+footer {
+  height: 120px;
+  color: white;
+  background-color: #198754;
+  padding-top: 20px;
+}
+
+footer .social-icon {
+  font-size: 2rem;
+  margin-left: 20px;
+  color: aliceblue;
+}
+
+/* volunteer */
+.volunteer_heading {
+  padding: 20px;
+  color: #198754;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.banner {
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+}
+
+.form_heading {
+  padding: 20px;
+  text-align: center;
+  color: #198754;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+.p30 {
+  padding: 30px;
+}
+
+.side_bar_heading {
+  color: #198754;
+  font-family: 'Oswald', sans-serif;
+}
+
+.submit_btn {
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  color: #198754;
+}
+
+
+
+/* About And Feedback */
+/* responsive */
+/* Styles for laptop screens */
+@media (min-width: 1024px) {
+  /* It is not necessary to add here but there is the option */
+}
+
+/* Styles for iPad screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  #img1 {
+    width: 40%;
+  }
+
+  .glenda {
+    font-size: 99%;
+  }
+}
+
+/* Styles for iPhone screens */
+@media (max-width: 767px) {
+
+  #img1 {
+    width: 25%;
+  }
+
+  #name1 {
+    width: 98%;
+  }
+}
+
+.col-about {
+  background-color: rgb(219, 245, 219);
+}
+
+#mon {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#monastic {
+  float: left;
+  margin-right: 10px;
+}
+
+#para1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  text-align: justify;
+}
+
+#label1 {
+  position: relative;
+}
+
+#tagname1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(204, 246, 189, 0.8);
+  padding: 10px;
+}
+
+#nam {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#name {
+  float: right;
+  margin-left: 10px;
+}
+
+#para2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  text-align: justify;
+}
+
+#label2 {
+  position: relative;
+}
+
+#tagname2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(204, 246, 189, 0.8);
+  padding: 10px;
+}
+
+/* Feedback */
+.col-9-1 {
+  background-color: rgb(219, 245, 219);
+}
+
+#container {
+  display: flex;
+  align-items: center;
+}
+
+#img1 {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+#form {
+  flex: 1 1 auto;
+}
+
+
+/* Explore and Booking */
+
+@media screen and (max-width: 980px) {
+  .container-hh {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-hh {
+    width: 90%;
+    float: none;
+    background-color: #b183b2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .container-hh {
+    width: 100%;
+    float: none;
+    background-color: #64ddc7;
+  }
+}
+
+.h-grid {
+  width: 60%;
+  margin-left: 10%;
+  box-shadow: 4px 4px 8px #35405a;
+  border-radius: 0.25rem;
+
+}
+
+
+
+
+.banner-h {
+  background-image: linear-gradient(to right, #198754, #a3e6a3);
+  height: 50px;
+  padding: 10px;
+  color: aliceblue;
+}
+
+
+
+.space-h {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.my-form-container {
+  text-align: start;
+
+}
+
+.btn-primary {
+  background-color: #28a745;
+  width: 200px;
+  border-color: #b8dac0;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+
+.my-sidebar-container a {
+  font-size: 12px;
+  color: #28a745;
+  margin-top: 20px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  white-space: nowrap;
+  border-radius: 5px;
+
+}
+
+.my-sidebar-container ul {
+  text-align: start;
+}
+
+.container.text-center.top10 .my-aside {
+  margin-top: 110px;
+  padding: 10px;
+  width: 350px;
+}

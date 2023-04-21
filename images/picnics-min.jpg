@@ -1,0 +1,79 @@
+
+document.getElementById('validationCustom03').addEventListener('input', function (event) {
+    // 获取输入的人数
+    var number = event.target.value;
+
+    // 将输入的人数转换为数字
+    number = parseInt(number);
+
+    // 判断人数是否超过50
+    if (number > 50) {
+        // 显示警告框
+        alert('Sorry, no more than 50 participants per event.');
+        // 清空输入框的值
+        event.target.value = '';
+    }
+});//对于参于活动人数的监听，如果输入的数字超过50，就会alert
+
+document.getElementById('validationCustom04').addEventListener('change', function (event) {
+    var selectedOption = event.target.value;
+
+    if (selectedOption === '2') {
+        alert('Please be aware that camping is not allowed in this park during the night. We suggest choosing accommodations within the park for your stay.');
+    }
+});//对于表单中对于选择活动持续时间的dropdown选择的监听，如果选择第3个，则alert本公园不提供营地过夜，建议选择园内住宿
+
+var validationCustom06 = document.getElementById('validationCustom06');
+var validationCustom07 = document.getElementById('validationCustom07');
+
+validationCustom07.addEventListener('blur', function (event) {
+    var email01 = validationCustom06.value;
+    var email02 = validationCustom07.value;
+    //blur事件是当用户从当前输入框中完成填写失去焦点后的监听，如果第2个email框blur后，value与第1个不相同，用focus()方法让焦点回到email1中进行确认并清空email2的输入框
+    if (email01 !== email02) {
+        alert('Sorry, the second email address is not the same as the first');
+        validationCustom07.value = '';
+        validationCustom06.focus();
+    }
+});//对于第2次输入email地址的Input监听，如果第2次的value不等于第1次的，就会alert两次输入不一样
+
+document.getElementById('validationCustom05').addEventListener('blur', function (event) {
+
+    var number = event.target.value;
+    var validationCustom05 = document.getElementById('validationCutom05')
+
+    // 将输入的人数转换为数字
+    number = parseInt(number);
+
+    // 判断手机号码是否超过13位
+    if (number !== 13) {
+
+        alert('Sorry, please check the phone digits.');
+        event.target.value = '';
+        validationCustom05.focus();
+    }
+});//对表单中手机号码的限制监听，如果此输入框中数字超过13，则会alert要求重填
+
+
+(() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    // 获取class中带有needs-validation的元素并存到一个名为forms的变量中
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    // 遍历forms这个数组中所有的元素，并给这些元素添加submit监听器
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            //用checkValidity去检查表单的有效性，如果不符合规则，则用preventDfault()阻止表单提交，
+            //同时调用stopPropagation()方法限制这个表单提交受限事件的传播，影响其他DOM元素
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            //为当前表单元素添加一个不合法元素，联合html文件中class="invalid-feedback"对不合法表单提交后错误信息的提示
+            form.classList.add('was-validated')
+        }, false)//通常情况下，表单验证在事件冒泡阶段进行处理
+    })
+})()
