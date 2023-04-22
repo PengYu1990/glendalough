@@ -85,13 +85,6 @@ a {
 
 
 /* About And Feedback */
-/* responsive */
-/* Styles for laptop screens */
-@media (min-width: 1024px) {
-  /* It is not necessary to add here but there is the option */
-}
-
-/* Styles for iPad screens */
 
 .col-about {
   background-color: rgb(219, 245, 219);
